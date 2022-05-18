@@ -1,6 +1,7 @@
 // JavaScript Document
 var modo;
 var budy;
+var cabe;
 var dia1;
 var dia2;
 var contacto;
@@ -9,6 +10,8 @@ function comenzar() {
   modo = document.getElementById("modo");
 
   budy = document.getElementById("budy");
+
+  cabe = document.getElementById("cabecera");
 
   dia1 = document.getElementById("dia");
 
@@ -26,6 +29,7 @@ function cambiamodo() {
     modo.innerHTML = "Modo Diurno";
     modo.style.backgroundColor = "#8B5A38";
     budy.style.backgroundColor = "#312E50";
+    cabe.style.backgroundColor = "#312E50";
     contacto.style.backgroundColor = "#121221";
     mail.style.backgroundColor = "#121221";
     dia1.src = "imagenes/noche.png";
@@ -34,6 +38,7 @@ function cambiamodo() {
     modo.innerHTML = "Modo Nocturno";
     modo.style.backgroundColor = "#312E50";
     budy.style.backgroundColor = "#8B5A38";
+    cabe.style.backgroundColor = "#8B5A38";
     contacto.style.backgroundColor = "#2C2627";
     mail.style.backgroundColor = "#2C2627";
     dia1.src = "imagenes/dia.png";
